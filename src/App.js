@@ -5,11 +5,15 @@ import './App.css';
 
 import HomePage from './page/homepage/homepage.component';
 
-const HatsPage = () => (
-  <div>
-    <h1>Hats Page</h1>
-  </div>
-);
+const HatsPage = props => {
+  // console.log(props);
+
+  return (
+    <div>
+      <h1>Hats Page</h1>
+    </div>
+  );
+};
 
 function App() {
   return (
