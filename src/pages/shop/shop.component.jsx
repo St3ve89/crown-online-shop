@@ -11,6 +11,8 @@ import {
   convertCollectionsSnapshotToMap,
 } from '../../firebase/firebase.utils';
 
+import { ShopPageContainer } from './shop.styles';
+
 class ShopPage extends React.Component {
   unsubscribeFromSnapshot = null;
 
@@ -27,13 +29,13 @@ class ShopPage extends React.Component {
   render() {
     const { match } = this.props;
     return (
-      <div className='shop-page'>
+      <ShopPageContainer>
         <Route exact path={`${match.path}`} component={CollectionsOverview} />
         <Route
           path={`${match.path}/:collectionId`}
           component={CollectionPage}
         />
-      </div>
+      </ShopPageContainer>
     );
   }
 }
