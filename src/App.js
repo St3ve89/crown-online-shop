@@ -37,7 +37,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log({ user: this.props.currentUser });
     return (
       <div>
         <GlobalStyle />
